@@ -1,0 +1,53 @@
+.commentWrapper {
+  display: flex;
+  border: 1px solid grey;
+
+  .authorArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid grey;
+
+    .author {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 150px;
+
+      img {
+        max-width: 150px;
+        max-height: 150px;
+      }
+      .authorName {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    .creationTime {
+      color: grey;
+    }
+  }
+
+  .content {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .commentWrapper {
+    flex-direction: column;
+    .authorArea {
+      min-width: 0;
+      flex-direction: row;
+      justify-content: space-around;
+      border-right: 0;
+      border-bottom: 1px solid grey;
+
+      img {
+        display: none;
+      }
+    }
+  }
+}

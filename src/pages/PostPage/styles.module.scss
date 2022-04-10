@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 40px;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.content {
+  & > .mainPost {
+    margin-bottom: 10px;
+  }
+
+  & > .replies {
+    & > .reply:not(:first-child) > div {
+      border-top: 0;
+      @media screen and (max-width: 768px) {
+        border-top: 1px solid grey;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      & > .reply {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

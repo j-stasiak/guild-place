@@ -1,0 +1,11 @@
+.forumWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  .forumHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

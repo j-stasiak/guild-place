@@ -1,0 +1,42 @@
+.contentContainer {
+  padding: 32px;
+  @media screen and (max-width: 768px) {
+    padding: 16px;
+    width: 100vw;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 101;
+
+  & > h1 {
+    color: white;
+  }
+
+  .headerControlls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+  }
+}
+
+.sideNav {
+  height: calc(100vh - 80px);
+  z-index: 100;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.menuButton {
+  z-index: 102;
+  position: sticky;
+  top: 90px;
+  left: 10px;
+}
